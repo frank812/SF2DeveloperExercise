@@ -1,0 +1,30 @@
+{# app/Resources/views/git/starred.html.twig #}
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+<style type="text/css">
+h1 { font-family: Arial, Helvetica, Sans; }
+td { background-color: #eee; font-family: Arial, Helvetica, Sans; }
+th { background-color: #ccc; font-family: Arial, Helvetica, Sans; font-weight: bold; }
+</style>
+<h1>Starred Repos on git</h1>
+<table>
+    <tr>
+        <th>User</th>
+        <th>Name</th>
+        <th>Url</th>
+        <th>Owner</th>
+        <th>Stars</th>
+    </tr>
+    {% for repo in repos %}
+        <tr>
+            <td>{{ repo.user }}</td>
+            <td>{{ repo.name }}</td>
+            <td>{{ repo.url }}</td>
+            <td>{{ repo.owner }}</td>
+            <td>{{ repo.stars }}</td>
+        </tr>
+    {% endfor %}
+</table>
+{% endblock %}
