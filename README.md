@@ -1,3 +1,6 @@
+# Screenshot
+https://github.com/frank812/SF2DeveloperExercise/blob/master/SF2DeveloperExercise-screenshot.png
+
 # Developer Exercise
 
 Included in this repo is scaffolding for a new [Symfony 2.8](http://symfony.com/) project, which you are free to use. To run this project:
