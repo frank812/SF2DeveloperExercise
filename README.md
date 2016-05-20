@@ -1,32 +1,5 @@
 # Developer Exercise
 
-We're constantly on the lookout for talented developers to join our team. Not only does that mean we're looking for a solid understanding of the programming languages we use, but also their practical application with respect to how the web works today.
-
-## Overview
-
-For this exercise, you're going to build a small application in PHP.
-
-You may use any MVC PHP framework of your choice.
-
-However, PULSE uses Symfony 2 so preference may be given if you use that framework. We've also included project scaffolding to help you get started. If you would rather use another framework you will be required to set up the project yourself.
-
-You may also use any open source libraries as you see fit.
-
-You will be using git for source control.
-
-Following the completion of the application, you'll answer a few questions about the work you just completed.
-
-Please allow approximately 2 hours for this exercise.
-
-## Step 0: Setup
-
-You'll need the following to complete this exercise:
-
-* git installed
-* a github account. If you don't have one already, please go to https://github.com/ and sign up for your free account and make sure you've [installed your ssh key](https://help.github.com/articles/generating-an-ssh-key/).
-* php 5.5+ installed and working on your development machine
-* a working development environment, including code editor of choice
-
 Included in this repo is scaffolding for a new [Symfony 2.8](http://symfony.com/) project, which you are free to use. To run this project:
 
 ```
@@ -80,15 +53,21 @@ Please answer each of the following questions within the README.md file of your 
 0. If you did not use Symfony 2, which framework did you chose to write this in and why?
 
 0. How long did you work on this programming exercise for?
+About 2 hours
 
-0. Were there any parts of the exercise you were not able to complete due to time constraints? If you had more time, how would you improve this code base?  
+0. Were there any parts of the exercise you were not able to complete due to time constraints? If you had more time, how would you improve this code base?
+The extra features are not included because of time. Add some abstraction level (for example, the git fetch is currently hard-coded).
 
 0. What websites did you use to help you complete this exercise? Please provide links if possible.
+Stackoverflow to solve some CURL- and sorting-related issues.
 
 0. How would you test this application?
+I'd mock the fetch to Git in PHPUnit
 
 0. Your product owner just decided we should only show 10 results per page, and allow the user to paginate though the results. How would you approach adding this feature to your application?
+I'd add more logic con the client and have pagination parameters only available for ajax requests.
 
 0. Looking forward, how would you optimize this application to support thousands of concurrent users? What problems would you expect high traffic load to cause with this application? What are some possible solutions for those problems?
+I'd add a cache for the cURL.
 
 0. Anything else you'd like us to know?
